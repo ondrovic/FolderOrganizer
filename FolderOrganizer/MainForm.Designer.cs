@@ -171,7 +171,7 @@
             ExtensionBaseFolderOverrideTextBox.BorderStyle = BorderStyle.None;
             ExtensionBaseFolderOverrideTextBox.Location = new Point(200, 22);
             ExtensionBaseFolderOverrideTextBox.Name = "ExtensionBaseFolderOverrideTextBox";
-            ExtensionBaseFolderOverrideTextBox.PlaceholderText = "optional base folder";
+            ExtensionBaseFolderOverrideTextBox.PlaceholderText = "extentions storage path (optional)";
             ExtensionBaseFolderOverrideTextBox.Size = new Size(188, 16);
             ExtensionBaseFolderOverrideTextBox.TabIndex = 2;
             // 
@@ -273,7 +273,6 @@
         private TextBox SelectedFolderTextBox;
         private ProgressBar OrganizeProgressBar;
         private GroupBox extensions_groupbox;
-        //private ListBox extenisons_listbox;
         private Button ExtensionRemoveButton;
         private GroupBox add_new_extension_groupbox;
         private Button ExtensionAddButton;

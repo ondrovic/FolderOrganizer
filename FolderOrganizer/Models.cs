@@ -2,6 +2,10 @@
 
 namespace FolderOrganizer
 {
+
+    /// <summary>
+    /// This class contains the models used in the application.
+    /// </summary>
     internal class Models
     {
         private partial class Settings
@@ -18,6 +22,11 @@ namespace FolderOrganizer
             public string BaseFolder { get; set; } = default!;
         }
 
+
+        /// <summary>
+        /// Returns a list of supported file extensions
+        /// </summary>
+        /// <returns>A list of supported file extensions</returns>
         public static IEnumerable<Extension> SupportedExtensions()
         {
             Settings? settings = null;

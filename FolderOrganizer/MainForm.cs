@@ -1,5 +1,3 @@
-using Microsoft.VisualBasic;
-
 namespace FolderOrganizer
 {
     public partial class MainForm : Form
