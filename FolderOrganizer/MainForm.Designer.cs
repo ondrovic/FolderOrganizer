@@ -204,6 +204,7 @@
             status_message_groupbox.TabIndex = 6;
             status_message_groupbox.TabStop = false;
             status_message_groupbox.Text = "Status Messages";
+            status_message_groupbox.Visible = false;
             // 
             // status_message_textbox
             // 
@@ -214,6 +215,7 @@
             status_message_textbox.ReadOnly = true;
             status_message_textbox.Size = new Size(681, 43);
             status_message_textbox.TabIndex = 0;
+            status_message_textbox.Visible = false;
             // 
             // MainForm
             // 
