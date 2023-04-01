@@ -123,12 +123,12 @@ namespace FolderOrganizer
                 return;
             }
 
-            if (actionType == Constents.RemoveAction)
+            if (actionType == Constants.RemoveAction)
             {
                 RemoveItem(extensionItemsArray, item);
             }
 
-            if (actionType == Constents.AddAction)
+            if (actionType == Constants.AddAction)
             {
                 AddItem(extensionItemsArray, item, textBox);
             }
@@ -139,7 +139,7 @@ namespace FolderOrganizer
             
             foreach (var extensionItem in extensionItemsArray)
             {
-                listBox.Items.Add(extensionItem[Constents.TypePropertyKey].ToString());
+                listBox.Items.Add(extensionItem[Constants.TypePropertyKey].ToString());
             }
         }
 

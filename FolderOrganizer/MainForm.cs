@@ -34,7 +34,7 @@ namespace FolderOrganizer
 
         private void ExtensionAddButton_Click(object sender, EventArgs e)
         {
-            Utilities.UpdateSettingFile(Constents.SettingsFileName, ExtensionAddTextBox.Text, Constents.ExtensionPropertyKey, Constents.AddAction, ExtensionsListBox, ExtensionBaseFolderOverrideTextBox);
+            Utilities.UpdateSettingFile(Constants.SettingsFileName, ExtensionAddTextBox.Text, Constants.ExtensionPropertyKey, Constants.AddAction, ExtensionsListBox, ExtensionBaseFolderOverrideTextBox);
             Utilities.ClearTextBoxText(ExtensionAddTextBox);
             Utilities.ClearTextBoxText(ExtensionBaseFolderOverrideTextBox);
             RunButton.Focus();
@@ -45,7 +45,7 @@ namespace FolderOrganizer
             Utilities.IsButtonEnabled(ExtensionRemoveButton, ExtensionsListBox);
             foreach (var item in ExtensionsListBox.SelectedItems.Cast<object>().ToList())
             {
-                Utilities.UpdateSettingFile(Constents.SettingsFileName, item, Constents.ExtensionPropertyKey, Constents.RemoveAction, ExtensionsListBox, null);
+                Utilities.UpdateSettingFile(Constants.SettingsFileName, item, Constants.ExtensionPropertyKey, Constants.RemoveAction, ExtensionsListBox, null);
             }
         }
 
@@ -65,7 +65,7 @@ namespace FolderOrganizer
 
         private void ExtensionAddTextBox_TextChanged(object sender, EventArgs e)
         {
-            Utilities.IsButtonEnabled(ExtensionAddButton, ExtensionAddTextBox, Constents.MinimumExtensionLengh);
+            Utilities.IsButtonEnabled(ExtensionAddButton, ExtensionAddTextBox, Constants.MinimumExtensionLengh);
             Utilities.IsChildTextBoxEnabled(ExtensionAddButton, ExtensionBaseFolderOverrideTextBox);
         }
 

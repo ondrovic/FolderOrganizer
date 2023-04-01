@@ -1,6 +1,6 @@
 ﻿namespace FolderOrganizer
 {
-    internal class Constents
+    internal class Constants
     {
         public const string ExtensionPropertyKey = "extensions";
         public const string TypePropertyKey = "type";

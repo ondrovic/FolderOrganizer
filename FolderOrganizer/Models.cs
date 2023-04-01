@@ -6,24 +6,24 @@ namespace FolderOrganizer
     {
         private partial class Settings
         {
-            [JsonProperty(Constents.ExtensionPropertyKey)]
+            [JsonProperty(Constants.ExtensionPropertyKey)]
             public Extension[] Extensions { get; set; } = default!;
         }
 
         internal partial class Extension
         {
-            [JsonProperty(Constents.TypePropertyKey)]
+            [JsonProperty(Constants.TypePropertyKey)]
             public string Type { get; set; } = default!;
-            [JsonProperty(Constents.BaseFolderPropertyKey)]
+            [JsonProperty(Constants.BaseFolderPropertyKey)]
             public string BaseFolder { get; set; } = default!;
         }
 
         public static IEnumerable<Extension> SupportedExtensions()
         {
             Settings? settings = null;
-            if (Utilities.SettingsFileExists(Constents.SettingsFileName))
+            if (Utilities.SettingsFileExists(Constants.SettingsFileName))
             {
-                using StreamReader reader = File.OpenText(Constents.SettingsFileName);
+                using StreamReader reader = File.OpenText(Constants.SettingsFileName);
                 settings = JsonConvert.DeserializeObject<Settings>(reader.ReadToEnd());
             }
 
